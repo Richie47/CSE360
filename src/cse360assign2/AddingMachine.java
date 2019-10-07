@@ -53,7 +53,7 @@ public class AddingMachine {
 	}
 	
 	/*subtracts an arbitrary value to the total
-	 * @param value an int to be subtracted from the total
+	 * @param value an integer to be subtracted from the total
 	 */
 	public void subtract (int value) {
 		total -= value;
@@ -67,7 +67,12 @@ public class AddingMachine {
 	 * @return the operations recorded in ArrayList tracker separated by spaces
 	 */
 	public String toString () {
-		return String.join(" ", tracker); //concatenates the given elements of the ArrayList with the appropriate space. If there is only one element the space is not added.
+		/**
+		 * concatenates the given elements of the ArrayList 
+		 * with the appropriate space. 
+		 * If there is only one element the space is not added.
+		 */
+		return String.join(" ", tracker);
 	}
 	
 	/*
